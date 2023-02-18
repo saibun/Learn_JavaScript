@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	//global variable
+	var golbalVariable = 100;
+	function test() {
+		var golbalVariable = -100;
+		return golbalVariable;
+	}
+	console.log(test());//local variable get precedence here. and it will print -100
+	console.log(golbalVariable);// it will print 100.
+</script>

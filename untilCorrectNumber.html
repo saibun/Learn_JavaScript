@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Until_give_correct_num</title>
+</head>
+<body>
+	<button onclick="correct_num()">click</button>
+	<p id = "demo"> result show here</p>
+	<script type="text/javascript">
+		let input;
+		const correct_num=()=>{
+			const num=6;
+			while(num!=input){
+				input=prompt("enter number");
+			
+			}
+			document.getElementById("demo").innerHTML="You enter right number";
+		}
+	</script>
+
+</body>
+</html>

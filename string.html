@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	var a="saikat";
+	var b="souvik";
+	console.log(a*b);
+	//string is immutable means you can't change a specific part of a string 
+	console.log(a[5])
+	//you can't change a[5]=t to any other character at that place
+	//but 
+	console.log(b.replace("s","S"));
+
+	//how to find the befor last char into a string
+	console.log(a[a.length-2]);
+
+	//to print last one char of a string 
+	console.log(a[a.length-1]);
+
+	//methods in string
+	console.log(b.replace("S","s"));//replacing
+	console.log(b.slice(2));//slicing
+	console.log(b.slice(3,b.length-1));//slicing
+	console.log(a.concat(" is a elder brother of ",b," both live together."));
+	var c ="string";
+	const d = "string";
+	if(c==d){
+		console.log(true);
+	}else{
+		console.log(false);
+	}
+</script>

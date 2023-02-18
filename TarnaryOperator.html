@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Turnary_Operator_e.g.</title>
+</head>
+<body>
+	<button onclick="Check()">Click</button>
+	<p id = "demo">result</p>
+	<script type="text/javascript">
+		const Check=()=>{
+			let input = prompt("Enter your age");
+			let b=input>18?"You can drive":"You can't drive";
+			document.getElementById("demo").innerHTML=b;
+		}
+	</script>
+
+</body>
+</html>

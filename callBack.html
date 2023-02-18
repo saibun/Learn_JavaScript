@@ -1,0 +1,24 @@
+<script type="text/javascript">
+	//without callback
+	var sum,result;
+	function mydisplay1(value){
+		console.log(value);
+	}
+	function mycal1(x,y){
+		 sum = x+y;
+		 mydisplay1(sum);
+	}
+	mycal1(2,2);
+
+
+	//with callback fucntion
+	function mydisplay2(value){
+		console.log(value);
+	}
+	function mycal2(x,y,myCallback){
+		 result = x+y;
+		 myCallback(result);
+	}
+	mycal2(2,4,mydisplay2);
+
+</script>

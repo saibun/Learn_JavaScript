@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	//below two lines will be executed due to javascript hoisted it at top
+	//means internally javascript declere them at the top
+	console.log(a);
+	//below line printing undefined even i initilize b on 12 no line. because javascript hoisted the decleration(at the top) only not the initialization. 
+	console.log(b);
+	greet();
+	function greet(){
+		console.log("this is greet function") ;
+	}
+
+	console.log(c);//ReferenceError.
+	//it will give error, because for the case of let and const javascript hoisted let decleretion at the top but you can't use it because you initilize latter. This is a exception in javascript
+	var a;
+	var b=10;
+
+	let c =10;
+	console.log(c);
+</script>

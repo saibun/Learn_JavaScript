@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = [17,2,4,15];
+		let A = [11,2,14,165];
+		let b = a.toString();
+		console.log(b);
+		console.log(typeof(b));
+		console.log(a.join(" and "))//join the array with and between every digits.It convert into string also.
+		console.log(delete a[0]);//delete is a operator not a method
+		console.log(a.length)//delete not change the length of array
+		console.log(a.concat(A));
+		const compare=(a,b)=>{
+			return a-b;
+		}
+		console.log(A.sort(compare));
+		console.log(A);//sort do permanent change in array
+
+		console.log(A.reverse());//reverse also did permanent changes
+		console.log(A);
+
+		//splice method--> in splice method first you have to say index position, then how many elements want to delete, and then which element want to add. In array A ([165, 14, 11, 2]) i want to start form index position 1 and want to delete 2 items and want to add 1000,1001,1010,1011 
+		let result=A.splice(1,2,1000,1001,1010,1011);
+		//result will be {165,1000,1001,1010,1011,2}
+		console.log(A)
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Looping array element</title>
+</head>
+<body>
+	<p id="demo"> want to see the list ?</p>
+	<button onclick="document.getElementById('demo').innerHTML=format">List</button>
+	<script type="text/javascript">
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		let fLen = fruits.length;
+		let format="<ol>";
+		for(let i=0;i<fLen;i++){
+			format+="<li>"+fruits[i]+"</li>";
+		}
+		format+="</ol>"
+		//document.getElementById("demo").innerHTML=format;
+	</script>
+
+</body>
+</html>

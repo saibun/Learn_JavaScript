@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	function makeSentence(noun,verb,adjective){
+		var result ="";
+		result+=noun+verb+" a" +adjective+" boy";
+		return result;
+	}
+	console.log(makeSentence("ram "," is"," good"));
+
+	//argument and parameter
+	function mydescription(name, age){//name and age is paramete. Variables declere in functions are parameter.
+		if(age>18){
+			console.log("User "+name+" is an adult which age is "+age+".");
+		}else if(age>10 && age<18){
+			console.log("User "+name+" is a teenager which age is "+age+".");
+		}
+		else{
+			console.log("User "+name+" is a kid which age is "+age+".");
+		}
+		
+	}
+	mydescription("saikat",27);//"saikat,27 is aggument", values declere in functions are arguments.
+</script>

@@ -1,0 +1,28 @@
+<script type="text/javascript">
+	//global function
+	var a = 10;
+
+	//write a function here 
+	function box(){
+		var b=1;//is not accessable because not declere at global level
+		//var b is called local scope variable
+		console.log(b);
+	}
+
+	//write another fucntion
+	function aBox(){
+		if (a!=null){
+			console.log("Value of a is "+a);
+		}
+		if(b!=null){
+			console.log("Value of b is "+b);//giving error
+		}
+		
+		
+	}
+	box();
+	aBox();
+	//if i declere box() after aBox() it will not call that function because javascript get error at aBox() function. From here we can understand javascript read code line by line.
+
+
+</script>

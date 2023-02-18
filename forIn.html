@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>For In Loop</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		const persion={name:"saikat",age:"23"}
+		const arr = [22,23,24,25,26];
+		text="<ul>";
+		//using for in loop for object cases
+		for(let x in persion){
+			text+="<li>"+persion[x]+"</li>";
+
+		}
+		text+="</ul>";
+		document.getElementById("demo").innerHTML=text;
+		text1="<ul>";
+		//using for in loop for object cases
+		for(let x in arr){
+			text1+="<li>"+arr[x]+"</li>";
+
+		}
+		text1+="</ul>";
+		document.getElementById("demo1").innerHTML=text1;
+	</script>
+
+</body>
+</html>

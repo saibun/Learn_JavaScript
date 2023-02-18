@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	//In java Script arry we can add any kind of data type
+	var arr=["saikat",5,8.901,true];
+	console.log(arr);
+	var arrA=[["saikat",5,],["souvik",6]];
+	console.log(arrA);//printing a array.
+	console.log(arrA[0][0]);
+
+	//Array in javascript are mutable we can change the value of a specific index position.
+	arrA[0][1]=10;
+	console.log(arrA)//buy doing 10 it also update on line no 5. Line no 6 will also print 10
+
+	var arrB = [[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]]
+	console.log(arrB);
+	console.log(arrB[3][0][0]);
+	console.log(arrB.length);
+	console.log(arrB[3].length);
+
+	//Append a data at the end of an arry using push() function.
+	arr.push(arrA);//it add last item permanently
+	console.log(arr);
+
+	//Remove the data of the last position use pop() function;
+	var remove=arr.pop();//it delete last item permanently
+	console.log(arr);//it delete last item permanently
+	console.log(remove);
+
+	//Remove the first element from the array use shift() function;
+	arr.shift();
+	console.log(arr);
+
+	//Add a item at the first index of an array use unshift() function;
+	arr.unshift(["souvik","fuchu"],18);
+	console.log(arr);
+	console.log(typeof(arr));
+</script>

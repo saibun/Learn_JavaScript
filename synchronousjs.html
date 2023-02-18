@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	//this is synchronous way programming.
+	
+	function fun1(){
+		console.log("this is fun1");
+	}
+
+	function fun2(){
+		console.log("fun 2 start");
+		fun1();
+		console.log("fun 2 end");
+	}
+	fun2();
+
+	//Asyschronous
+	setTimeout(function (){ console.log("fun3 start")},3000)
+
+	function fun4(){
+		console.log("fun 4 start");
+		console.log("fun 4 end");
+	}
+	fun4();
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch Statment Example</title>
+</head>
+<body>
+	<button onclick="switchfn()">click here</button>
+	<p id="demo"> fruit names</p>
+	<script type="text/javascript">
+		function switchfn(){
+			let user_input= prompt("please enter your fevourit fruit");
+			switch(user_input){
+				case "apple":
+					document.getElementById("demo").innerHTML="apple";
+					break;
+				case "mango":
+					document.getElementById("demo").innerHTML="mango";
+					break;
+				default:
+					document.getElementById("demo").innerHTML="no matching with our store";
+			}
+
+		}
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DevidedByTwoAndThree</title>
+</head>
+<body>
+	<button onclick="fun()">Click</button>
+	<p id="demo"> result </p>
+	<script type="text/javascript">
+		function fun(){
+			let input=prompt("enter number to check");
+			if(input%2==0 || input %3==0){
+				document.getElementById("demo").innerHTML="Divided by two or three";
+			}else{
+				document.getElementById("demo").innerHTML="not devided by 2 or 3";
+			}
+		}
+	</script>
+
+</body>
+</html>
