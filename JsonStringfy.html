@@ -1,0 +1,39 @@
+<script type="text/javascript">
+	const person = {
+					  name: "John",
+					  age: 30,
+					  city: "New York"
+					};
+	let myInfo=JSON.stringify(person);//it convert the valu into json format
+	console.log(myInfo);
+
+	const person1 = {
+					  name: "John",
+					  age: 30,
+					  city: "New York",
+					  date: new Date()
+					};
+	let result = JSON.stringify(person1);
+	console.log(result);
+	let arr =["John",30,"New York"]
+	const person2 = {
+					  name: "John",
+					  age: 30,
+					  city: "New York",
+					  // fullInfo: function () {
+					  // 	return this.name+" "+this.age+" "+this.city
+					  // }
+					  fullDetails: arr
+					};
+					get ageValue(){
+						return this.age;
+					}
+	let output = JSON.stringify(person2);
+	console.log(output);//it will only return name, age and city . function can't convert into json.
+
+	//Array can convert into json
+
+	//get age
+	let ageValue = person2.ageValue;
+	console.log(ageValue);
+</script>
